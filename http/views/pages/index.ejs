@@ -1,0 +1,36 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %> - Accueil</title>
+    <% include ../partials/head %>
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+  </head>
+
+  <body class="container">
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+    <main>
+      <div class="jumbotron">
+        <fieldset>
+          <legend>Prise 1</legend>
+          <p>Etat actuel: <state id="p1State"><%= p1State %></state></p>
+          <a href="/?relay=1&state=on">ON</a> - <a href="/?relay=1&state=off">OFF</a>
+        </fieldset>
+        <fieldset>
+          <legend>Prise 2</legend>
+          <p>Etat actuel: <state id="p2State"><%= p2State %></state></p>
+          <a href="/?relay=2&state=on">ON</a> - <a href="/?relay=2&state=off">OFF</a>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer>
+     <% include ../partials/footer %>
+    </footer>
+
+  </body>
+</html>

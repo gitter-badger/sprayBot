@@ -1,0 +1,29 @@
+<!-- views/pages/error.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> - ERROR</title>
+    <% include ../partials/head %>
+    <link rel="stylesheet" href="/css/error.css" type="text/css">
+  </head>
+
+  <body class="container">
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+    <main>
+      <div class="jumbotron">
+        <h1 id="errorTitle">Error</h1>
+        <hr />
+        <span class="errorCode"><%= errorCode %></span>: <span class="errorDesc"><%= errorDesc %></span>
+      </div>
+    </main>
+
+    <footer>
+     <% include ../partials/footer %>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.errorCode {
+  color: #000;
+  font-weight: bold;
+}
+
+.errorDesc {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#errorTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
